@@ -23,7 +23,7 @@ spec:
             name: db-config
         - secretRef:
             name: db-secrets
-        image: quay.io/redhattraining/exoplanets:v1.0
+        image: quay.io/redhattraining/exoplanets:v1.1.0
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
@@ -44,10 +44,10 @@ spec:
           timeoutSeconds: 3
         resources:
           limits:
-            cpu: 250m
-            memory: 256Mi
+            cpu: 300m
+            memory: 512Mi
           requests:
-            cpu: 100m
+            cpu: 150m
             memory: 256Mi
         securityContext:
           allowPrivilegeEscalation: false
