@@ -23,7 +23,7 @@ spec:
             name: db-config
         - secretRef:
             name: db-secrets
-        image: quay.io/redhattraining/exoplanets:v1.1.0
+        image: quay.io/redhattraining/exoplanets:v1.0
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
